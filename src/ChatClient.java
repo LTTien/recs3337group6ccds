@@ -112,13 +112,6 @@ public class ChatClient {
                 textField.setEditable(true);
             } else if (line.startsWith("MESSAGE")) {
                 messageArea.append(line.substring(8) + "\n");
-                if (line.toLowerCase().contains("getstatus"))
-                {
-
-
-                    line = "Here is the status: All Good";
-                    out.println(line);
-                }
             }
         }
     }
